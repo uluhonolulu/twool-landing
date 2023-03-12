@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.font-body{
+	font-family:'Montserrat', sans-serif !important;
+}
+.font-heading{
+	font-family: 'Poppins', sans-serif !important;
+}
