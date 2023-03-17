@@ -13,14 +13,12 @@ const Header = ({handleHidden}) => {
       })
     return (
         <>
-            <header className={scroll ? "bg-transparent sticky-bar mt-4 stick": "bg-transparent sticky-bar mt-4"}>
+            <header className={scroll ? "bg-transparent sticky-bar mt-4 h-20 stick": "bg-transparent sticky-bar mt-4 h-20"}>
                 <div className="container bg-transparent">
-					<img
-						className="h-10"
-						src="/assets/imgs/logos/monst-logo.svg"
-						alt="Monst"
-					/>
- 
+					<div className="text-3xl lg:text-5xl lg:leading-normal mb-4 font-bold font-heading text-orange-700">
+						twool
+					</div>
+
                 </div>
             </header>
         </>
