@@ -1,7 +1,10 @@
 import React from 'react';
 import SwiperCore, { Navigation } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
-import Link from "next/link";
+import Slide from './Slide';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import './fix-nav.css';
 
 SwiperCore.use([Navigation]);
 
@@ -9,122 +12,43 @@ const Slider1 = () => {
     return (
         <>
             <Swiper
-                breakpoints={{
-                    // when window width is >= 768px
-                    768: {
-                    width: 768,
-                    slidesPerView: 2,
-                    },
-                }}
                 slidesPerView={1}
+				navigation={true}
+				loop={true}
                 spaceBetween={30}
-                navigation={{
-                    prevEl: ".custom_prev",
-                    nextEl: ".custom_next"
-                }}
+				className="px-4"
             >
-                <SwiperSlide>
-                    <div className="px-3 pb-5">
-                        <div className="card-slider group">
-                            <img className="rounded-xl" src="/assets/imgs/placeholders/img-2.jpg" alt="Monst" />
-                            <div className="flex justify-between items-end">
-                                <div>
-                                    <h1 className="mt-5 text-xl font-semibold group-hover:text-blue-500">
-                                        <Link href="/services" legacyBehavior>
-                                            <a>User growth</a>
-                                        </Link>
-                                    </h1>
-                                    <p className="mt-2 text-xs text-gray-500">Harvard university</p>
-                                </div>
-                                <div>
-                                    <Link href="/services" legacyBehavior>
-                                        <a className="tracking-wide hover-up-2 mr-2 inline-block px-4 py-3 text-xs text-blue-500 font-semibold leading-none border border-blue-200 hover:border-blue-500 hover:text-white hover:bg-blue-500 rounded">View Details</a>
-                                    </Link>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <div className="px-3 pb-5">
-                        <div className="card-slider group">
-                            <img className="rounded-xl" src="/assets/imgs/placeholders/img-3.jpg" alt="Monst" />
-                            <div className="flex justify-between items-end">
-                                <div>
-                                    <h1 className="mt-5 text-xl font-semibold group-hover:text-blue-500">
-                                        <Link href="/services" legacyBehavior>
-                                            <a>Products</a>
-                                        </Link>
-                                    </h1>
-                                    <p className="mt-2 text-xs text-gray-500">Cocacola., Co</p>
-                                </div>
-                                <div>
-                                    <Link href="/services" legacyBehavior>
-                                        <a className="tracking-wide hover-up-2 mr-2 inline-block px-4 py-3 text-xs text-blue-500 font-semibold leading-none border border-blue-200 hover:border-blue-500 hover:text-white hover:bg-blue-500 rounded">View Details</a>
-                                    </Link>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <div className="px-3 pb-5">
-                        <div className="card-slider group">
-                            <img className="rounded-xl" src="/assets/imgs/placeholders/img-4.jpg" alt="Monst" />
-                            <div className="flex justify-between items-end">
-                                <div>
-                                    <h1 className="mt-5 text-xl font-semibold group-hover:text-blue-500">
-                                        <Link href="/services" legacyBehavior>
-                                            <a>Event</a>
-                                        </Link>
-                                    </h1>
-                                    <p className="mt-2 text-xs text-gray-500">Oxford university</p>
-                                </div>
-                                <div>
-                                    <Link href="/services" legacyBehavior>
-                                        <a className="tracking-wide hover-up-2 mr-2 inline-block px-4 py-3 text-xs text-blue-500 font-semibold leading-none border border-blue-200 hover:border-blue-500 hover:text-white hover:bg-blue-500 rounded">View Details</a>
-                                    </Link>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <div className="px-3 pb-5">
-                        <div className="card-slider group">
-                            <img className="rounded-xl" src="/assets/imgs/placeholders/img-5.jpg" alt="Monst" />
-                            <div className="flex justify-between items-end">
-                                <div>
-                                    <h1 className="mt-5 text-xl font-semibold group-hover:text-blue-500">
-                                        <Link href="/services" legacyBehavior>
-                                            <a>Shopping</a>
-                                        </Link>
-                                    </h1>
-                                    <p className="mt-2 text-xs text-gray-500">Alibaba Co</p>
-                                </div>
-                                <div>
-                                    <Link href="/services" legacyBehavior>
-                                        <a className="tracking-wide hover-up-2 mr-2 inline-block px-4 py-3 text-xs text-blue-500 font-semibold leading-none border border-blue-200 hover:border-blue-500 hover:text-white hover:bg-blue-500 rounded">View Details</a>
-                                    </Link>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </SwiperSlide>
-            </Swiper>
+				
+				<SwiperSlide>
+					<Slide
+						name="Go For Rafizi"
+						wrongFirstName="Go"
+						bio="In the process to become Jedi of Digital Marketing | Copywriting #HelpMeLearning"
+						message="Hey there, Rafizi! Nice to connect with you on Twitter. I like your dedication to mastering digital marketing, and I appreciate the helpful tips in your tweets about copywriting. Keep up the awesome work!"
+					/>
+				</SwiperSlide>
 
-            <div id="carausel-2-columns-1-arrows" className="flex">
-                <span className="mr-4 text-blue-500 flex slick-arrow custom_prev">
-                    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M7 16l-4-4m0 0l4-4m-4 4h18"></path>
-                    </svg>
-                </span>
-                <span className="text-blue-500 flex slick-arrow custom_next">
-                    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
-                    </svg>
-                </span>
-            </div>
+ 				<SwiperSlide>
+					<Slide
+						name="amanda@55"
+						wrongFirstName="amanda@55"
+						bio="Blogger CryptoCurrency"
+						message="Hey Amanda, how's it going? Just wanted to say that I've been keeping up with your tweets and really appreciate your insights on all things CryptoCurrency. Your blog is awesome too, keep it up! Nice to connect with you."
+					/>
+				</SwiperSlide>
+
+ 				<SwiperSlide>
+					<Slide
+						name="Dr Stephen Harwood #SDG #DEI #AI #IWD23 #MWC23"
+						wrongFirstName="Dr"
+						bio="Researching, writing & innovating #TrustInTech #TechForGood #equality #sustainability #emergingtech #SDGs #futures #AI #digital #metaverse @TechnoForeSight"
+						message="Hey Stephen, nice to connect with you on Twitter! I've been reading your tweets and I appreciate the insights you share on #TrustInTech and #TechForGood. Your focus on #equality and #sustainability in emerging tech is awesome. Keep it up!"
+					/>
+				</SwiperSlide>
+
+
+
+           </Swiper>
         </>
     );
 };
