@@ -9,7 +9,7 @@ const SentCounter = (props) => {
 	
 	return (
 		<React.Fragment>
-			<div className='max-w-2xl mx-auto text-center'>
+			<div className='max-w-2xl mx-auto py-4 text-center'>
 				{!!messageCount && <><span className='font-semibold text-lg'>{messageCount}</span> DMs sent so far</>}
 			</div>
 		</React.Fragment>

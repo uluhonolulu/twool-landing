@@ -18,7 +18,7 @@ const Layout = ({ children }) => {
 
     return (
         <>
-            <div className="main font-body text-body bg-indigo-50">
+            <div className="main font-body text-body text-slate-900 bg-slate-50">
                 <Header handleHidden={handleHidden} />
                 {/* <MobileMenu
                     hiddenClass={hiddenClass}

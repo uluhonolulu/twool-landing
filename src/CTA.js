@@ -8,7 +8,7 @@ const CTA = (props) => {
 
 	return (
 		<React.Fragment>
-			<section className="bg-top bg-no-repeat pb-4" style={{ backgroundImage: "url('assets/imgs/elements/blob.svg')" }}>
+			<section className="pb-4" >
 				<div className="container px-4 mx-auto">
 					<div className="relative py-10 px-4 lg:p-10">
 						<div className="max-w-lg mx-auto text-center">
@@ -37,12 +37,12 @@ const CTA = (props) => {
 							</div>
 
 							<div className="mt-4 p-4 bg-white rounded-lg shadow flex flex-wrap max-w-md mx-auto wow animate__animated animate__fadeIn" data-wow-delay=".5s">
-								<div className="flex w-full md:w-2/3 px-3 mb-3 md:mb-0 md:mr-6 bg-gray-100 rounded">
+								<div className="flex w-full md:w-2/3 px-3 mb-3 md:mb-0 md:mr-6 bg-slate-100 rounded">
 									<img src="/assets/imgs/icons/twitter-blue.svg" alt="Twitter icon" />
-									<input {...$username.props} className="w-full pl-3 py-4 text-xs text-gray-400 font-semibold leading-none bg-gray-100 outline-none" type="text" placeholder="Enter your Twitter handle" />
+									<input {...$username.props} className="w-full pl-3 py-4 text-md text-indigo-700 font-semibold leading-none bg-transparent outline-none" type="text" placeholder="Enter your Twitter handle" />
 								</div>
 
-								<button onClick={go} className="w-full md:w-auto py-4 px-8 text-xs text-white font-semibold leading-none bg-orange-400 hover:bg-orange-500 rounded" type="submit">
+								<button onClick={go} className="w-full md:w-auto py-4 px-6 text-sm text-indigo-50 font-semibold leading-none bg-indigo-600 hover:bg-indigo-500 rounded" type="submit">
 									Sign Up
 								</button>
 							</div>
