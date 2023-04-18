@@ -39,7 +39,7 @@ const Slider1 = () => {
 
  				<SwiperSlide>
 					<Slide
-						name="Dr Stephen Harwood #SDG #DEI #AI #IWD23 #MWC23"
+						name="Dr Stephen Harwood"
 						wrongFirstName="Dr"
 						bio="Researching, writing & innovating #TrustInTech #TechForGood #equality #sustainability #emergingtech #SDGs #futures #AI #digital #metaverse @TechnoForeSight"
 						message="Hey Stephen, nice to connect with you on Twitter! I've been reading your tweets and I appreciate the insights you share on #TrustInTech and #TechForGood. Your focus on #equality and #sustainability in emerging tech is awesome. Keep it up!"
