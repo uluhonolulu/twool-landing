@@ -9,8 +9,7 @@ const Home = (props) => {
 
 	return (
 		<Layout>
-			<section className="xl:bg-[length:100vw_auto] bg-top bg-no-repeat -mt-24 pt-24">
-				<div className="hidden lg:block absolute inset-0 w-1/2 ml-auto bg-gray-100 z-0" style={{ "zIndex": "-1" }}></div>
+			<section className="xl:bg-[length:100vw_auto] bg-top bg-no-repeat">
 				<div className="container mx-auto">
 					<div className="pt-12 text-center">
 						<div className="max-w-2xl mx-auto mb-8">

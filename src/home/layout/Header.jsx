@@ -15,7 +15,7 @@ const Header = ({handleHidden}) => {
         <>
             <header className={scroll ? "bg-transparent sticky-bar h-20 stick": "bg-transparent sticky-bar h-20"}>
                 <div className="container bg-transparent">
-					<div className="text-center text-5xl lg:text-7xl lg:leading-normal mb-4 font-bold font-heading text-orange-600">
+					<div className="text-center text-5xl lg:text-7xl mb-4 font-bold text-indigo-700" style={{fontFamily: 'Righteous', cursive:true}}>
 						twool
 					</div>
 
