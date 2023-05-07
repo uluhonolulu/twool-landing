@@ -4,6 +4,7 @@ import Slider2 from './home/slider/Slider2';
 import CTA from './CTA';
 import SentCounter from './SentCounter';
 import Slider1 from './home/slider/Slider1';
+import Faqs from './Faqs';
 
 const Home = (props) => {
 
@@ -37,7 +38,9 @@ const Home = (props) => {
 						<p className="text-lg mt-4">✅ Review your leads, add a call to action, or just click "Send" and wait for replies.</p>
 					</div>
 				</div>
-			</section>			
+			</section>
+
+			<Faqs />
 
 			<CTA/>
 
