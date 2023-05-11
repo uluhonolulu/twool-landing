@@ -1,0 +1,72 @@
+/* .header{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+} */
+
+nav{
+    display: flex;
+    padding: 1.1rem;
+}
+
+nav .logo{
+    font-family: 'Righteous';
+    font-size: 2.4rem;
+    color: #4338CA;
+}
+
+.hero-section{
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1.2rem;
+    margin: 1.8rem 0;
+}
+
+.hero-section h2, .hero-section span{
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+    text-align: center;
+    color: #1E293B;
+    font-family: 'Poppins';
+}
+
+.hero-section span{
+    color: #4338CA;
+}
+
+.hero-section p{
+    margin-top: 1rem;
+    font-family: 'Montserrat';
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    text-align: center;
+    color: #374151;
+}
+
+.hero-section .left{
+    flex: 3;
+}
+
+.hero-section .right{
+    flex: 2;
+}
+
+.hero-section .right img{
+    width: 26rem;
+
+}
+
+@media (max-width: 780px) {
+    .hero-section{
+        margin: 2rem 0;
+    }
+    
+    .hero-section .right{
+        display: none;
+    }  
+}

@@ -1,0 +1,152 @@
+.pricing-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem 0;
+  padding: 1.8rem;
+}
+
+.pricing-section h2,
+.pricing-section span {
+  font-size: 2.1rem;
+  text-align: center;
+  font-family: "Poppins";
+  line-height: 2.6rem;
+  color: #1e293b;
+}
+
+.pricing-section h2 {
+  margin-bottom: 1rem;
+}
+
+.pricing-section span {
+  color: #5a8dee;
+}
+
+.pricing-section p {
+  font-size: 1.1rem;
+  color: #48515f;
+  text-align: center;
+}
+
+.pricing-section .pricing-cards {
+  display: flex;
+  width: 80%;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 1.8rem 0;
+}
+
+.pricing-section .pricing-cards .price-card {
+  width: 15rem;
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  background-color: #fff;
+  padding: 1.6rem;
+  border-radius: 0.8rem;
+  -moz-box-shadow: 1px 1px 1px 1px rgba(68, 68, 68, 0.6);
+  -webkit-box-shadow: 1px 1px 1px 1px rgba(68, 68, 68, 0.6);
+  box-shadow: 1px 1px 1px 1px rgba(68, 68, 68, 0.6);
+}
+
+.pricing-section .pricing-cards .price-card p {
+  font-size: 1.1rem;
+  font-weight: 500;
+  font-family: "Montserrat";
+}
+
+.pricing-section .pricing-cards .price-card strong {
+  font-size: 1.2rem;
+  font-weight: 900;
+  color: #5a8dee;
+}
+
+.pricing-section .pricing-cards .price-card h3 {
+  text-align: center;
+  font-size: 1.2rem;
+  font-family: "Poppins";
+}
+
+.strikethrough {
+  position: relative;
+}
+.strikethrough:before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 50%;
+  right: 0;
+  border-top: 2px solid #dd0031 !important;
+  border-color: inherit;
+
+  -webkit-transform: rotate(-5deg);
+  -moz-transform: rotate(-5deg);
+  -ms-transform: rotate(-5deg);
+  -o-transform: rotate(-5deg);
+  transform: rotate(-5deg);
+}
+
+
+.twitter-wrap {
+  display: flex;
+  max-width: 45vw;
+  justify-content: center;
+}
+.twitter-wrap input {
+  outline: none;
+  flex: 1;
+  padding: 2rem 1rem;
+  font-size: 1.1em;
+  -webkit-border-top-left-radius: 1.6rem;
+  -webkit-border-bottom-left-radius: 1.6rem;
+  -moz-border-radius-topleft: 1.6rem;
+  -moz-border-radius-bottomleft: 1.6rem;
+  border-top-left-radius: 1.6rem;
+  border-bottom-left-radius: 1.6rem;
+  box-shadow: none;
+  border: none;
+  box-shadow: 2px 4px 6px rgba(0,0,0,0.19);
+  max-width: 90%;
+}
+.twitter-wrap button {
+  padding-right: 0.8rem;
+  background-color: #fff;
+  -webkit-border-top-right-radius: 1rem;
+  -webkit-border-bottom-right-radius: 1rem;
+  -moz-border-radius-topright: 1rem;
+  -moz-border-radius-bottomright: 1rem;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  box-shadow: 5px 4px 6px rgba(0,0,0,0.19);
+  border: none;
+  cursor: pointer;
+  cursor: hand;
+}
+
+.twitter-wrap button span {
+  margin-left: 3rem;
+  padding: 1rem 2rem;
+  font-size: 0.9em;
+  text-transform: uppercase;
+  font-weight: 300;
+  color: #fff;
+  background-color: #5a8dee;
+  border-radius: 1rem;
+  box-shadow: 2px 4px 6px rgba(0,0,0,0.19);
+}
+.twitter-wrap button span:hover {
+  background-color: #4d84e9;
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.19);
+}
+.pricing-section p.footer{
+  margin-top: 1.6rem;
+  font-size: 0.9rem;
+  line-height: 1.4rem;
+  width: 50vw;
+  color: #6c7179;
+  font-family: 'Montserrat', sans-serif;
+}
