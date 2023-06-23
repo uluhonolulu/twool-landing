@@ -24,14 +24,14 @@ const Pricing = () => {
 
         <div className="price-card" data-aos="fade-up" data-aos-duration="1600">
           <p>Early bird price</p>
-          <h3 className="strikethrough">$30/month</h3>
+          <h3 className="strikethrough">$40/month</h3>
         </div>
 
         <div className="price-card" data-aos="fade-up" data-aos-duration="1600">
           <p>
             <strong>Your price</strong>
           </p>
-          <h3>$20/month</h3>
+          <h3>$30/month</h3>
         </div>
       </div>
 
