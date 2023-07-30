@@ -4,6 +4,7 @@ import Accordion from './components/FAQ/Index'
 import Header from './components/Header/Header'
 import Pricing from './components/Pricing/Index'
 import Slides from './components/Slider/Index'
+import Testimonials from './components/Testimonials/Index';
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
       <Header/>
       <Slides/>
       <Discover/>
+	  <Testimonials/>
       <Accordion/>
       <Pricing/>
     </div>
